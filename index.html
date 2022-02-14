@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/micons/css/materialdesignicons.min.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
+  </head>
+  <body class="indigo darken-4">
+    <div class="container animated fadeInUp">
+      <div class="row section">
+        <div class="col m6 s12 offset-m3 fourstart2 center">
+          <!--Form-->
+
+          <div class="form1 container">
+            <div class="center">
+                <img src="assets/img/logo.png"  class="ologo" width="70" height="70" />
+            </div>
+            <form id="accessform" method="post" onsubmit="auth(this)">
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="ip" name="apn" type="text"/>
+                <label>Server APN/IP</label>
+              </div>
+              <div class="input-field col s12">
+                <input id="port" name="port" type="text"/>
+                <label>Port Number</label>
+              </div>
+              <div  class="col s12 center-align">
+                <span onclick="auth('#accessform')" class='btn-large waves-effect indigo buttn' >Access</span>
+              </div>
+            </div>
+            </form>
+          </div>
+        </div>
+        <br />
+      </div>
+    </div>
+    <div class="footer indigo darken-3">
+      <div class="row">
+        <div class="col m11 s8 message">
+          <p>Message</p>
+        </div>
+        <div class="col m1 s4">
+          <i class="syspower tooltipped mdi mdi-power right" data-position="top" data-delay="50" onclick="window.close();" data-tooltip="Exit App"></i>
+          <i class="sysinternet tooltipped mdi mdi-wifi right" data-position="top" data-delay="50" data-tooltip="Connecting..."></i>
+        </div>
+
+      </div>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+
+      <!--script-->
+      <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.js"> </script>
+      <script>
+      $(document).ready(function(){
+        checkapn();
+      });
+      </script>
+      <script type="text/javascript" src="assets/js/clientside.js">  </script>
+
+    <script>
+      // You can also require other files to run in this process
+    //  require('./renderer.js')
+    </script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+
+  </body>
+</html>

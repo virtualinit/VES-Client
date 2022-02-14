@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="assets/micons/css/materialdesignicons.min.css"/>
+    <link type="text/css" rel="stylesheet" href="assets/css/animate.css"  media="screen,projection"/>
+  </head>
+  <body class="indigo darken-4">
+    <div class="container animated fadeInUp">
+      <div class="row section">
+
+        <div class="col m6 s12 offset-m3 fourstart center">
+          <div class="loader">
+            <h4>Get ready for the</h4>
+            <h1>Exam</h1>
+            <div class="preloader-wrapper big active">
+              <div class="spinner-layer spinner-blue-only">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div>
+                <div class="gap-patch">
+                  <div class="circle"></div>
+                </div>
+                <div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br />
+      </div>
+
+    </div>
+    <div class="footer indigo darken-3">
+      <div class="row">
+        <div class="col m11 s8 message">
+          <p>Message</p>
+        </div>
+        <div class="col m1 s4 wifi">
+          <i class="sysinternet tooltipped mdi mdi-wifi right data-position="top" data-delay="50" data-tooltip="Connecting...""></i>
+        </div>
+      </div>
+    </div>
+    <!--script-->
+    <!-- Compiled and minified JavaScript -->
+    <!-- Insert this line above script imports  -->
+  <script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+
+      <!--script-->
+      <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+      <script type="text/javascript" src="assets/js/materialize.js"> </script>
+      <script type="text/javascript" src="assets/js/clientside.js">  </script>
+
+      <script>
+      $(document).ready(function(){
+        var cq = JSON.parse(localStorage.getItem('questions'));
+        if(cq.length>0)
+        {
+          setTimeout(function(){
+            window.location.href="exam.html";
+          },3000);
+        }
+        else
+        {
+          history.back(-1);
+        }
+      })
+      </script>
+    <script>
+      // You can also require other files to run in this process
+    //  require('./renderer.js')
+    </script>
+
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+  </body>
+</html>

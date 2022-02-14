@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link type="text/css" rel="stylesheet" href="assets/css/materialize.min.css"  media="screen,projection"/>
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css"  media="screen,projection"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link type="text/css" rel="stylesheet" href="assets/micons/css/materialdesignicons.min.css"/>
+</head>
+<body class="indigo darken-4">
+  <div>
+    <!--header-->
+    <div class="row header indigo darken-4">
+      <div class="col s3 m1">
+        <img class="dp spic" src="img/dp.jpg" width="80px" height="80px"/>
+      </div>
+      <div class="col s9 m8 details">
+        <div class="row">
+          <p><strong >Name: </strong><span class="sname"></span></p>
+          <p><strong>Class: </strong><span class="sclass"></span></p>
+        </div>
+      </div>
+      <div class="col s12 m3  lout center-align">
+        <span class="btn waves-effect waves-light green center" onclick="location.reload();"  >Reload</span>
+        <span class="btn waves-effect waves-light red center" onclick="slogout()"  >Logout</span>
+      </div>
+    </div>
+    <!--Exam Details-->
+    <div class="container ">
+      <div class="examheader indigo darken-4 examtitle">
+        Upcoming Exams
+      </div>
+      <!--collasible-->
+      <ul id="examlist" class="collapsible" data-collapsible="accordion"></ul>
+    </div>
+
+
+    <div class="footer indigo darken-3">
+      <div class="row">
+        <div class="col m11 s8 message">
+          <p>Message</p>
+        </div>
+        <div class="col m1 s4">
+            <i class="sysinternet tooltipped mdi mdi-wifi right data-position="top" data-delay="50" data-tooltip="Connecting...""></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!--Import jQuery before materialize.js-->
+
+  <!-- Compiled and minified JavaScript -->
+  <!-- Insert this line above script imports  -->
+<script>if (typeof module === 'object') {window.module = module; module = undefined;}</script>
+
+
+    <!--script-->
+    <script type="text/javascript" src="assets/js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"> </script>
+    <script type="text/javascript" src="assets/js/clientside.js">  </script>
+    <script>if (window.module) module = window.module;</script>  <script>
+    $(document).ready(function(){
+      sinfo();
+      getexamlist();
+      $('.collapsible').collapsible('open', 0);
+    });
+    </script>
+
+  <script>
+    // You can also require other files to run in this process
+  //  require('./renderer.js')
+  </script>
+
+  <!-- Insert this line after script imports -->
+</body>
+</html>

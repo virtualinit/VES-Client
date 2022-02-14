@@ -1,0 +1,254 @@
+body{
+		padding-bottom: 40px;
+        overflow: hidden;
+        overflow-y: auto;
+}
+
+.details{
+    font-family: 'Muli', sans-serif;
+    color: white;
+}
+.dp{
+    border-radius: 50%;
+}
+
+.header{
+    padding-top: 20px!important;
+    margin-bottom:0px;
+}
+
+.leftnav1text a{
+    text-decoration: none;
+}
+
+.lout{
+    margin-top: 20px;
+}
+
+.leftnav{
+    margin-top: -20px;
+}
+
+.leftnav1{
+    background-color: #D0D0D0;
+}
+.leftnav1text{
+    padding: 10px;
+}
+.examheader{
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    font-size: 20pt;
+    color: #fff;
+
+    }
+.exambtn{
+
+    color: #fff;
+    }
+
+.fourstart{
+	margin-top: 25vh;
+    border-top: 5px solid #0865E8;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+	padding-bottom:40px;
+}
+.fourstart2{
+	margin-top: calc(20vh - 40px);
+    border-top: 5px solid #0865E8;
+    border-radius: 9px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FFFFFF;
+	padding-bottom:40px;
+}
+
+.loader{
+	padding-bottom:25px;
+}
+.fourbody .container{
+    margin-top:22vh;
+}
+
+
+header, main, footer {
+    padding-left: 240px;
+  }
+
+.footer{
+    color: #FFFFFF;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+	line-height: 35px;
+}
+.message p{
+	margin: 0 auto;
+}
+.wifi{
+	line-height: 35px;
+}
+
+
+#timer{
+	margin:0 auto;
+	text-align: center;
+	font-size: 50px;
+	background: transparent;
+}
+
+
+.timer{
+	line-height: 45px;
+	border: 3px solid #fff;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.timer .mdi { font-size:32px; }
+
+
+.timenotify { display: block; width:150px; height:150px; position:absolute;  margin-top:-150px; margin-left:-3px; }
+.secondnotify { display: block; width:150px; height:150px; position: inherit; 	border-radius: 50%; margin-left:-3px; margin-top:-3px; background:rgba(0,0,0,0.5);
+	-webkit-animation: secondstick 60s infinite linear;
+  animation: secondstick 60s infinite linear;
+}
+
+.mdi-spin:before {
+  -webkit-animation: mdi-spin 60s infinite linear;
+  animation: mdi-spin 60s infinite linear;
+}
+
+@-webkit-keyframes secondstick {
+  0% {
+    -webkit-transform:scale(1);
+    transform:scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.1);
+    transform:scale(0.1);
+  }
+}
+@keyframes secondstick {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+  }
+}
+
+@-webkit-keyframes mdi-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes mdi-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+
+.sidetool{
+	height: calc( 100vh - 161px);
+	padding-bottom: 40px;
+	margin-bottom: -40px;
+	border-left: 1px solid #fff;
+}
+.row.section{
+	margin-bottom: 0px;
+}
+.box{
+	height: calc( 100vh - 138px - 60% );
+	overflow: hidden;
+	overflow-x: auto;
+	overflow-y: scroll;
+	border-radius: 7px;
+}
+
+
+.boxes{
+	border: 1px solid #fff;
+	padding: 1px 10px;
+}
+
+.boxes a{
+    color: #000!important;
+    text-align: center!important;
+}
+
+.box::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: solid 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #eeeeee  ;
+}
+
+.box::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #eeeeee  ;
+}
+
+.box::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #3949ab  ;
+}
+
+
+.paper{
+	padding-top: 50px;
+
+}
+.paper h6{
+	font-size: 24px;
+	padding-bottom: 20px;
+}
+.paper label{
+	font-size: 18px!important;
+	color: #000;
+}
+.congrats{
+	padding-top:50px;
+	padding-bottom:60px;
+}
+.form1{
+    padding-top: 50px;
+    padding-bottom: 35px;
+}
+.buttn{
+    border-radius: 10px;
+}
+
+.tab>a.active { background: indigo!important; color:#FFF!important; }
+.tab>a.attended { background: green!important; color:#FFF!important; }
+
+  @media only screen and (max-width : 992px) {
+    header, main, footer {
+      padding-left: 0;
+    }
+  }

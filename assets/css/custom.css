@@ -1,0 +1,127 @@
+@import url('animate.css');
+
+/* Your Custom CSS */
+img.rounded { border-radius:5px;  }
+.col.section { padding-top:20px; padding-bottom:20px;}
+.centerbox { margin-top:2vh; }
+
+.bottom {  position: fixed; bottom:30px; width:100vw; text-align: center; display: block; margin:0 auto; text-shadow:1px 1px 1px #333; }
+
+/*
+ *  Scrollbar
+ */
+
+body::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 0px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: #F5F5F5;
+}
+
+body::-webkit-scrollbar-thumb
+{
+	background-color: #1a237e;
+	border: 2px solid #555555;
+}
+
+.bodybg {
+	background-image: url('../img/bg/1.jpg');
+	background-size: cover;
+}
+
+.loginbg {
+z-index: -2;
+position: fixed;
+top: 0px; left: 0px;
+width: 100vw;
+height: 100vh;
+display: block;
+background-image: url('../img/bg/1.jpg');
+background-size: cover;
+}
+.blur {
+	-webkit-filter: blur(10px);
+	-moz-filter: blur(10px);
+	-o-filter: blur(10px);
+	-ms-filter: blur(10px);
+	filter: blur(10px);
+}
+
+.loginbox { border-radius: 5px; background:rgba(255,255,255,0.8); margin-top:20vh; }
+
+
+/* postfix code */
+.input-field .postfix ~ input { width: 80%; width:calc(100% - 3rem);  margin-left:0px; margin-right: 3rem!important; }
+.input-field .postfix {
+    position: absolute;
+    width: 3rem;
+    right: 0px;
+    font-size: 2rem;
+    -webkit-transition: color .2s;
+    transition: color .2s;
+}
+.input-field .postfix.active {
+    color: #26a69a;
+}
+
+
+/* System Bar fixed-bottom */
+.sysbar { background:rgba(0,0,0,0.7); color:#DDD; position: fixed; bottom:0px; height:30px; line-height: 30px; }
+.sysbar.top { top:0px; }
+.sysbar i.mdi,.sysbar time { padding-left:5px; padding-right:5px; }
+
+.progressbar .progress { background-color:transparent!important; border-radius:0px; margin:0 auto; }
+.progressbar .progress>.determinate { border-radius:5px; background-color:#558b2f; }
+
+.sidebar { padding-top:12px; border-radius:0px 5px 5px 0px; width:50px; text-align: center; background:rgba(0,0,0,0.7); color:#DDD; position: fixed; left: 0px; top:calc(25vh - 30px) ; max-height:80vh; min-height:50vh; line-height: 30px; }
+.sidebar .item { width:90%; color:#eee; opacity:0.4; transition:.5s all; }
+.sidebar .item:hover,.sidebar .item:active { width:100%; color:#9575cd; opacity:1; }
+.sidebar .item>i { font-size:32px; }
+
+.workspace { padding:5px 15px; overflow: hidden; overflow-x: hidden; overflow-y:auto; width:calc(100vw - 90px); height:calc(100vh - 70px); background:rgba(255,255,255,0.7); color: #333; position: fixed; right:20px; top:20px; border-radius:5px; border-top:3px solid rgba(0,0,0,0.8);  border-bottom:3px solid rgba(0,0,0,0.8); }
+
+.ml-record input.browser-default,.ml-mainlist input.browser-default,.controlbox input.browser-default { width:100%; margin:0 auto; background:transparent; border:0px solid transparent; padding:7px; }
+.ml-record i,.ml-mainlist i,.controlbox i { padding:5px; border-radius:3px; }
+
+.controlbox { border:3px solid rgba(0,0,0,0.9); background-color:rgba(0,0,0,0.8); color:#FFF; min-height:50px; padding:15px 10px; display: block; }
+.controlbox select { background:#424242; color: #FFF; border:0px solid transparent; padding:7px;  }
+select.picker__select--month,select.picker__select--year { background:#424242; color: #333; border:0px solid transparent; padding:7px;  }
+.controlbox img.prefix { border-radius:50%; padding:2px; }
+.closebtn { position: static; right: 0px; top:0px; display: block; line-height: 20px; text-align: center; padding: 0px!important; width:20px; height:20px; }
+.loginclock { font-size:10vh; position: fixed; left:20px; bottom:5vh; color:#FFF; font-weight: 100; }
+.btnsmall { padding:5px; border-radius:3px; margin:3px auto; line-height:20px; }
+
+ul.dropdown-content.select-dropdown li span {
+  background:#424242; color: #FFF;
+}
+ul.dropdown-content.select-dropdown li {
+  border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+table { border:1px solid #FFF; }
+table td { padding:2px; }
+
+input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default),textarea.materialize-textarea  { height:2rem;  }
+
+.mdl-button {background:rgba(0,0,0,0.5); color:white; border:1px solid transparent; border-radius:3px; margin:3px auto; margin-right:2px;}
+.mdl-button:hover { background:rgba(0,0,0,0.8);}
+div.dataTables_wrapper div.dataTables_filter { text-align: left; }
+.dataTables_length label { display: none; }
+
+/**mod quick Button**/
+.modquickbtn {  border-radius:0px 0px 10px 10px; overflow: hidden; position: absolute; top:-15px; right:20px; background:rgba(0,0,0,0.5); color:white!important;  }
+.modquickbtn li {  -webkit-transition:all .5s ease-out; cursor: pointer; display: inline-block; background:rgba(0,0,0,0.5); color:white!important; padding:3px; text-align: center; }
+.modquickbtn li.mred:hover { background:rgba(255, 95, 109, 0.8); }
+.modquickbtn li.mblue:hover { background:rgba(35, 103, 186, 0.8); }
+.modquickbtn li span { width:0px; height:0px; overflow: hidden; display: inline-block; transition:all 1s; }
+.modquickbtn li:hover span { width:100px;  height: auto;  overflow: inherit; white-space: nowrap; }
+
+/* == */
+.appoff { font-size:10vh; position: fixed; right:40px; bottom:5vh; color:#FFF; cursor:pointer;  }
+.appoff:hover { text-shadow:1px 1px 4px #333; }
+.appoff:active { text-shadow:1px 1px 2px #333; }

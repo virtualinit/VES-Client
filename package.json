@@ -1,0 +1,23 @@
+{
+  "name": "VES - Virtualnit Examination System",
+  "version": "2.0",
+  "description": "its a client app for Virtualnit Examination System created and maintained by Virtualnit.net",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "
+    https://github.com/AJ-TechSoul/VES-Client",
+  "keywords": [
+    "Virtualnit",
+    "Examination",
+    "System",
+    "VES",
+    "Client"
+  ],
+  "author": "AJ",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "~1.6.2"
+  }
+}
