@@ -1,4 +1,4 @@
-# Virtualnit-Examination-System (Client)
+# Virtualinit-Examination-System (Client)
 
 **Clone and run for a quick way to see VES Client in action but don't forget to get the server app**
 
